@@ -1,0 +1,76 @@
+section.flag
+  :background url(/images/pulley.png) no-repeat top left
+  :height 370px
+  :overflow hidden
+  :position relative
+  .box
+    :display block
+    :margin 0 auto
+    :padding-left 60px
+  .text
+    :height 190px
+    :text-align center
+    :vertical-align middle
+    :display table-cell
+    :width 210px
+    .edit
+      :padding 5px
+      :text-align center
+      :font-size 18px
+      @include border-radius(8px)
+      :border 1px solid #555
+  .flag
+    :left 13px
+    :top 0px
+    :margin-top 12px
+    :width 273px
+    :height 207px
+    :background url(/images/flag.png) no-repeat
+    :position absolute
+      :-webkit-transition top 600ms ease
+      :-moz-transition top 600ms ease
+      :-ms-transition top 600ms ease
+      :-o-transition top 600ms ease
+      :transition top 600ms ease
+    &.top
+      :top 0px
+      :-webkit-transition top 600ms ease
+      :-moz-transition top 600ms ease
+      :-ms-transition top 600ms ease
+      :-o-transition top 600ms ease
+      :transition top 600ms ease
+      .ui
+        .up
+          :display none
+    &.bottom
+      :top 150px
+      :-webkit-transition top 600ms ease
+      :-moz-transition top 600ms ease
+      :-ms-transition top 600ms ease
+      :-o-transition top 600ms ease
+      :transition top 600ms ease
+      .ui
+        .down
+          :display none
+    .ui
+      :position absolute
+      :right -6px
+      :top 50%
+      :margin-top -15px
+      a
+        :display block
+        :text-decoration none
+        :font-size 20px
+        :color #000
+        :opacity 0.4
+        &:hover
+          :opacity 0.8
+          :-webkit-transition opacity 600ms ease
+          :-moz-transition opacity 600ms ease
+          :-ms-transition opacity 600ms ease
+          :-o-transition opacity 600ms ease
+          :transition opacity 600ms ease
+
+    .text
+      :width 273px
+

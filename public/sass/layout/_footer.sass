@@ -1,0 +1,39 @@
+.l-footer
+  @include border-radius-top()
+  @include linear-gradient(#262626 0%, #121212 100%)
+  :position fixed
+  :bottom 0
+  :padding 20px
+  @include clear
+  p, ul
+    :display inline-block
+    :vertical-align middle
+    :float left
+  ul
+    :text-align right
+    :float right
+    li
+      :display inline-block
+      a
+        :display block
+        @include border-radius(15px)
+        :padding 10px 20px
+        :color #fff
+        :font-family 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+        :text-decoration none
+        :margin-left 20px
+      .sets
+        @include linear-gradient(#8d4848 0%, #5c1818 100%)
+        &:active
+          @include linear-gradient(#5c1818 100%, #8d4848 0%)
+      .words
+        @include linear-gradient(#3e6980 0%, #0a364c 100%)
+        &:active
+          @include linear-gradient(#0a364c 100%, #3e6980 0%)
+      .save
+        @include linear-gradient(#49703c 0, #21331b 100%)
+        &:active
+          @include linear-gradient(#21331b 100%, #49703c 0)
+      
+
+

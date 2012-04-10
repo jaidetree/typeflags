@@ -1,0 +1,296 @@
+@import url(../fonts/major_snafu/stylesheet.css);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*[class*="col-"] {
+  margin: 0 10px;
+  float: left; }
+
+.grid {
+  width: 960px;
+  margin: 0 auto; }
+  .grid .col-1 {
+    width: 60px; }
+  .grid .col-2 {
+    width: 140px; }
+  .grid .col-3 {
+    width: 220px; }
+  .grid .col-4 {
+    width: 300px; }
+  .grid .col-5 {
+    width: 380px; }
+  .grid .col-6 {
+    width: 460px; }
+  .grid .col-7 {
+    width: 540px; }
+  .grid .col-8 {
+    width: 620px; }
+  .grid .col-9 {
+    width: 700px; }
+  .grid .col-10 {
+    width: 780px; }
+  .grid .col-11 {
+    width: 860px; }
+  .grid .col-12 {
+    width: 940px; }
+  .grid .pos-1 {
+    margin-left: 80px; }
+  .grid .pos-2 {
+    margin-left: 160px; }
+  .grid .pos-3 {
+    margin-left: 240px; }
+  .grid .pos-4 {
+    margin-left: 320px; }
+  .grid .pos-5 {
+    margin-left: 400px; }
+  .grid .pos-6 {
+    margin-left: 480px; }
+  .grid .pos-7 {
+    margin-left: 560px; }
+  .grid .pos-8 {
+    margin-left: 640px; }
+  .grid .pos-9 {
+    margin-left: 720px; }
+  .grid .pos-10 {
+    margin-left: 800px; }
+  .grid .pos-11 {
+    margin-left: 880px; }
+  .grid .row {
+    margin: 20px 0; }
+    .grid .row:after {
+      clear: both;
+      content: ".";
+      display: block;
+      visibility: hidden;
+      font-size: 0;
+      height: 0; }
+
+.hide {
+  display: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Snafu";
+  color: #7d1106; }
+
+h1 {
+  font-size: 80px; }
+
+h2 {
+  font-size: 45px; }
+
+body {
+  background: url(/images/background.png) top center;
+  color: white; }
+
+.l-header {
+  text-align: center;
+  -moz-mask: url(/images/title_mask.png) no-repeat center top;
+  -webkit-mask: url(/images/title_mask.png) no-repeat top center;
+  margin-bottom: 100px; }
+
+.l-content {
+  margin-top: 300px;
+  min-height: 1000px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); }
+  .l-content:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    height: 0; }
+  .l-content h1 {
+    margin-bottom: 60px; }
+
+.l-footer {
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  background: -moz-linear-gradient(top, #262626 0%, #121212 100%);
+  background: -webkit-linear-gradient(top, #262626 0%, #121212 100%);
+  background: -o-linear-gradient(top, #262626 0%, #121212 100%);
+  background: -ms-linear-gradient(top, #262626 0%, #121212 100%);
+  background: linear-gradient(top, #262626 0%, #121212 100%);
+  position: fixed;
+  bottom: 0;
+  padding: 20px; }
+  .l-footer:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    height: 0; }
+  .l-footer p, .l-footer ul {
+    display: inline-block;
+    vertical-align: middle;
+    float: left; }
+  .l-footer ul {
+    text-align: right;
+    float: right; }
+    .l-footer ul li {
+      display: inline-block; }
+      .l-footer ul li a {
+        display: block;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        padding: 10px 20px;
+        color: white;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        text-decoration: none;
+        margin-left: 20px; }
+      .l-footer ul li .sets {
+        background: -moz-linear-gradient(top, #8d4848 0%, #5c1818 100%);
+        background: -webkit-linear-gradient(top, #8d4848 0%, #5c1818 100%);
+        background: -o-linear-gradient(top, #8d4848 0%, #5c1818 100%);
+        background: -ms-linear-gradient(top, #8d4848 0%, #5c1818 100%);
+        background: linear-gradient(top, #8d4848 0%, #5c1818 100%); }
+        .l-footer ul li .sets:active {
+          background: -moz-linear-gradient(top, #5c1818 100%, #8d4848 0%);
+          background: -webkit-linear-gradient(top, #5c1818 100%, #8d4848 0%);
+          background: -o-linear-gradient(top, #5c1818 100%, #8d4848 0%);
+          background: -ms-linear-gradient(top, #5c1818 100%, #8d4848 0%);
+          background: linear-gradient(top, #5c1818 100%, #8d4848 0%); }
+      .l-footer ul li .words {
+        background: -moz-linear-gradient(top, #3e6980 0%, #0a364c 100%);
+        background: -webkit-linear-gradient(top, #3e6980 0%, #0a364c 100%);
+        background: -o-linear-gradient(top, #3e6980 0%, #0a364c 100%);
+        background: -ms-linear-gradient(top, #3e6980 0%, #0a364c 100%);
+        background: linear-gradient(top, #3e6980 0%, #0a364c 100%); }
+        .l-footer ul li .words:active {
+          background: -moz-linear-gradient(top, #0a364c 100%, #3e6980 0%);
+          background: -webkit-linear-gradient(top, #0a364c 100%, #3e6980 0%);
+          background: -o-linear-gradient(top, #0a364c 100%, #3e6980 0%);
+          background: -ms-linear-gradient(top, #0a364c 100%, #3e6980 0%);
+          background: linear-gradient(top, #0a364c 100%, #3e6980 0%); }
+      .l-footer ul li .save {
+        background: -moz-linear-gradient(top, #49703c 0, #21331b 100%);
+        background: -webkit-linear-gradient(top, #49703c 0, #21331b 100%);
+        background: -o-linear-gradient(top, #49703c 0, #21331b 100%);
+        background: -ms-linear-gradient(top, #49703c 0, #21331b 100%);
+        background: linear-gradient(top, #49703c 0, #21331b 100%); }
+        .l-footer ul li .save:active {
+          background: -moz-linear-gradient(top, #21331b 100%, #49703c 0);
+          background: -webkit-linear-gradient(top, #21331b 100%, #49703c 0);
+          background: -o-linear-gradient(top, #21331b 100%, #49703c 0);
+          background: -ms-linear-gradient(top, #21331b 100%, #49703c 0);
+          background: linear-gradient(top, #21331b 100%, #49703c 0); }
+
+section.flag {
+  background: url(/images/pulley.png) no-repeat top left;
+  height: 370px;
+  overflow: hidden;
+  position: relative; }
+  section.flag .box {
+    display: block;
+    margin: 0 auto;
+    padding-left: 60px; }
+  section.flag .text {
+    height: 190px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 210px; }
+    section.flag .text .edit {
+      padding: 5px;
+      text-align: center;
+      font-size: 18px;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      border: 1px solid #555555; }
+  section.flag .flag {
+    left: 13px;
+    top: 0px;
+    margin-top: 12px;
+    width: 273px;
+    height: 207px;
+    background: url(/images/flag.png) no-repeat;
+    position: absolute;
+      position--webkit-transition: top 600ms ease;
+      position--moz-transition: top 600ms ease;
+      position--ms-transition: top 600ms ease;
+      position--o-transition: top 600ms ease;
+      position-transition: top 600ms ease; }
+    section.flag .flag.top {
+      top: 0px;
+      -webkit-transition: top 600ms ease;
+      -moz-transition: top 600ms ease;
+      -ms-transition: top 600ms ease;
+      -o-transition: top 600ms ease;
+      transition: top 600ms ease; }
+      section.flag .flag.top .ui .up {
+        display: none; }
+    section.flag .flag.bottom {
+      top: 150px;
+      -webkit-transition: top 600ms ease;
+      -moz-transition: top 600ms ease;
+      -ms-transition: top 600ms ease;
+      -o-transition: top 600ms ease;
+      transition: top 600ms ease; }
+      section.flag .flag.bottom .ui .down {
+        display: none; }
+    section.flag .flag .ui {
+      position: absolute;
+      right: -6px;
+      top: 50%;
+      margin-top: -15px; }
+      section.flag .flag .ui a {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        opacity: 0.4; }
+        section.flag .flag .ui a:hover {
+          opacity: 0.8;
+          -webkit-transition: opacity 600ms ease;
+          -moz-transition: opacity 600ms ease;
+          -ms-transition: opacity 600ms ease;
+          -o-transition: opacity 600ms ease;
+          transition: opacity 600ms ease; }
+    section.flag .flag .text {
+      width: 273px; }
