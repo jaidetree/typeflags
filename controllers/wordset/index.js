@@ -64,16 +64,27 @@ Controller.prototype = {
         WordSet.words = req.body.words;
         WordSet.status = "public";
 
-        req.send();
-            
-        WordSet.save(function(err){ 
+        model.find({ 'words': req.body.words }, function(err, docs){ 
             if( err )
             {
-                req.send(err);
+                res.send(error(err));
+            }
+            else if( docs.length > 0 )
+            {
+                res.send(error("Set of Words already exists!"))
             }
             else
             {
-                res.send(success('Item created', WordSet));
+                WordSet.save(function(err){ 
+                    if( err )
+                    {
+                        res.send(error(err));
+                    }
+                    else
+                    {
+                        res.send(success('Item created', WordSet));
+                    }
+                });
             }
         });
     },

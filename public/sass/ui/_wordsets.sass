@@ -1,0 +1,38 @@
+#wordsets
+  :background rgba(255, 255, 255, 0.6)
+  @include border-radius-top(20px)
+  :display block
+  :position absolute
+  :bottom -270px
+  :right 10px
+  :max-height 400px
+  :overflow auto
+  :border 10px solid rgba(255, 255, 255, 0.3)
+  :width 360px
+  :z-index 0
+  @include transition(all, 1000ms, ease)
+  &.visible
+    :bottom -270px
+    @include transition(all, 1000ms, ease)
+  &.hidden
+    :bottom -500px
+    @include transition(all, 1000ms, ease)
+  h3
+    :margin 10px
+    :font-family 'Verdana'
+    :font-weight bold
+  ul
+    :display block
+    :padding 10px 0
+    li
+      :display block
+      :border-bottom 1px solid #666
+      :margin 0 10px
+      a
+        :display block
+        :padding 10px
+        :font-size 12px
+        :color #000
+        &:hover
+          :color #800
+

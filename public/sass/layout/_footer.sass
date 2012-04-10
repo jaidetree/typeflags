@@ -1,3 +1,5 @@
+.row
+  :position relative
 .l-footer
   @include border-radius-top()
   @include linear-gradient(#262626 0%, #121212 100%)
@@ -5,16 +7,16 @@
   :bottom 0
   :padding 20px
   @include clear
-  p, ul
+  :z-index 999
+  p, > ul
     :display inline-block
     :vertical-align middle
     :float left
-  ul
-    :text-align right
+  > ul
     :float right
-    li
+    > li
       :display inline-block
-      a
+      > a
         :display block
         @include border-radius(15px)
         :padding 10px 20px
@@ -34,6 +36,3 @@
         @include linear-gradient(#49703c 0, #21331b 100%)
         &:active
           @include linear-gradient(#21331b 100%, #49703c 0)
-      
-
-
